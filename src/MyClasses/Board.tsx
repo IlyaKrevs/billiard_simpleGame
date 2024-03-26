@@ -6,8 +6,6 @@ export interface IBoard {
         height: number,
     },
     context: CanvasRenderingContext2D,
-    clear: () => void,
-    drawBall(ball: IBall): void
 }
 
 export class Board implements IBoard {
@@ -18,8 +16,12 @@ export class Board implements IBoard {
     constructor({ size, context }: IBoard) {
         this.size = size
         this.context = context
-        context.canvas.width = this.size.width
-        context.canvas.height = this.size.height
+        this.initSize()
+    }
+
+    initSize(): void {
+        this.context.canvas.width = this.size.width
+        this.context.canvas.height = this.size.height
     }
 
     clear(): void {

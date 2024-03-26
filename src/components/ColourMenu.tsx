@@ -10,7 +10,7 @@ interface IColourMenu {
 
 export default function ColourMenu({ menuPos, showMenu, closeMenu, setBallColor }: IColourMenu) {
 
-    const colours = ['red', 'blue', 'green', 'yellow', 'pink']
+    const colours = ['red', 'blue', 'green', 'yellow', 'orange']
 
     function clickHanlder(value: string) {
         setBallColor(value)
@@ -25,7 +25,6 @@ export default function ColourMenu({ menuPos, showMenu, closeMenu, setBallColor 
                     left: menuPos.x,
                 }}
                 className={classes.mainContainer}
-                onMouseLeave={() => closeMenu()}
             >
                 {colours.map((item, index) => (
                     <div
