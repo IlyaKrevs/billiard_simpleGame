@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "//ilyakrevs.github.io/billiard_simpleGame/static/css/main.c9fe7a9e.css",
-    "main.js": "//ilyakrevs.github.io/billiard_simpleGame/static/js/main.934d5f98.js",
+    "main.js": "//ilyakrevs.github.io/billiard_simpleGame/static/js/main.dc045d06.js",
     "index.html": "//ilyakrevs.github.io/billiard_simpleGame/index.html",
     "main.c9fe7a9e.css.map": "//ilyakrevs.github.io/billiard_simpleGame/static/css/main.c9fe7a9e.css.map",
-    "main.934d5f98.js.map": "//ilyakrevs.github.io/billiard_simpleGame/static/js/main.934d5f98.js.map"
+    "main.dc045d06.js.map": "//ilyakrevs.github.io/billiard_simpleGame/static/js/main.dc045d06.js.map"
   },
   "entrypoints": [
     "static/css/main.c9fe7a9e.css",
-    "static/js/main.934d5f98.js"
+    "static/js/main.dc045d06.js"
   ]
 }
