@@ -1,4 +1,4 @@
-interface IBall {
+export interface IBall {
     id: number,
     pos: {
         x: number,
@@ -12,7 +12,7 @@ interface IBall {
     }
 }
 
-class Ball implements IBall {
+export class Ball implements IBall {
     id: number;
     pos: { x: number; y: number; };
     radius: number;
@@ -48,6 +48,9 @@ class Ball implements IBall {
         if (Math.abs(this.speed.dx) > stopFactor || Math.abs(this.speed.dy) > stopFactor) {
             this.speed.dx = this.speed.dx * percent
             this.speed.dy = this.speed.dy * percent
+        } else {
+            this.speed.dx = 0
+            this.speed.dy = 0
         }
     }
 
@@ -58,5 +61,3 @@ class Ball implements IBall {
         };
     })();
 }
-
-export default Ball
