@@ -1,6 +1,5 @@
 {
   "name": "simple-game",
-  "homepage": "https://https://ilyakrevs.github.io/billiard_simpleGame/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
